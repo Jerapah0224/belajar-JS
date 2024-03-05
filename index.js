@@ -193,7 +193,58 @@
 // } //Login Awak Berhasil :). OP LOGIKA  AND    &&
 
 
-console.log();
+
+/*IF, ELSE IF, ELSE */
+let nilai1 = 85;
+let nilai2 = 75;
+
+// if (nilai1 >= 85) {
+//     console.log('lulus');
+// } //lulus        if 
+
+// if (nilai1 >= 85 ) {
+//     console.log('naik');
+// } else {
+//     console.log('tetap');
+// } // naik        if dan else 
+
+// if (nilai1 >= 85) {
+//     console.log('Dapat A');
+// } else if (nilai2 >= 75) {
+//     console.log('Dapat B');
+// } else {
+//     console.log('Kurang Baik');
+// } // Dapat A     if, else if, dan else
+
+
+/*SWITCH CASE */
+// let buah ='apel';
+
+// switch (true) {
+//     case 'semangka':
+//         console.log('tidak suka');
+//         break;
+//     case 'salak':
+//         console.log('tidak suka');
+//         break;
+//     default:
+//         console.log('suka');
+//         break;
+// } // suka
+
+
+// let mtk = 80;
+
+// switch (false) {
+//     case mtk >= 75 && mtk <= 100:
+//         console.log('tidak');
+//         break;
+//     default:
+//         console.log('lulus');
+//         break;
+// } // lulus
+
+/*FUNCTION*/
 
 
 
