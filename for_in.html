@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Js</title>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <script>
+        const app = document.getElementById('app');
+        const buah = ['semangka', 'mangga', 'apel', 'nanas', 'durian'];
+        const json = {
+            buah : [
+                {
+                    no : 1,
+                    buah : 'mangga',
+                },
+                {
+                    no : 2,
+                    buah : 'nanas',
+                },
+                {
+                    no : 3,
+                    buah : 'apel',
+                },
+                {
+                    no : 4,
+                    buah : 'pisang',
+                },
+            ]
+        };
+
+        let html = ' ';
+
+    /* ini dengan variabel const buah*/
+        // for (const key in buah) {
+        //     html += `<p> ${buah[key]}</p>`;
+        // }
+
+    /*ini dengan variabel const json (dengan object)*/
+        // for (const key in json.buah) {
+        // //   html += `<p>${json.buah[key].buah}</p>`; //untuk menampilkan value buah
+        // // html += `<p>${json.buah[key].no}</p>`; //untuk menampilkan value no
+        // // html += `<p>${json.buah[key]['no']}</p>`; //untuk menampilkan value no dengan cara yang lain
+        // }
+        app.innerHTML = html;
+    /*ini dengan value ngambil dari jsonpalacehorder */
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(json => {
+                console.log(json);
+                let no = 1;
+                for (const key in json) {
+                    // html += `<p>${no++}. ${json[key].username}</p>`; //untuk menampilkan value username
+                    // html += `<p>${no++}. ${json[key].name}</p>`; //untuk menampilkan value name
+                    // html += `<p>${no++}. ${json[key].email}</p>`; //untuk menampilkan value email
+                /*bermain dengan value didalam value, cara sama kok tenang aja bessss*/
+                    //html += `<p>${no++}. ${json[key].address.city}</p>`; //untuk menampilkan value address yang didalamnya terdapat value city // 
+                    html += `<p>${no++}. ${json[key].company.name}</p>`; //untuk menampilkan value company yang didalamnya terdapat value name // 
+                };
+                app.innerHTML = html;
+            })
+        
+
+    </script>
+</body>
+</html>

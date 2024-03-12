@@ -195,8 +195,8 @@
 
 
 /*IF, ELSE IF, ELSE */
-let nilai1 = 85;
-let nilai2 = 75;
+// let nilai1 = 85;
+// let nilai2 = 75;
 
 // if (nilai1 >= 85) {
 //     console.log('lulus');
@@ -244,9 +244,53 @@ let nilai2 = 75;
 //         break;
 // } // lulus
 
-/*FUNCTION*/
+
+/*FUNCTION. jangan lupa pakai return.*/
+// function sapa(){
+//     return console.log('hello weeee, eh maksudnya hello word :)');
+// } // ini function biasa
+// sapa();
+
+// function jumlah(a,b) {
+//     console.log(a+b);
+//     return;
+// }
+// jumlah(2,4);
+
+// function jumlahAD (a,b=4) {
+//     console.log(a+b);
+//     return;
+// }//arti dari b=4 itu adalah jika nilai b tidak dimasukkan maka, 4 lah sebagai nilainya(defaultnya)
+// jumlahAD(2);
+
+// let kurang = function (a,b) {
+//     console.log(a-b);
+//     return;
+// }//cara lain untuk menggunakan function
+// kurang(4,2);
+
+// kali(12,2);//di function boleh seperti ini dan disebut hoisting
+// function kali(a,b) {
+//     console.log(a*b);
+//     return;
+// }
 
 
+/*LOOPING*/
+    /*FOR LOOP */
+    //lanjut ke file for.html ya kedannnn
+
+    /*DO..WHILE */
+    //lanjut ke file do_while.html ya kedannnn
+
+    /*WHILE LOOP */
+    //lanjut ke file while.html ya kedannnn
+
+    /*FOR..IN. dia menggunakan key untuk menampilkannya */
+    //lanjut ke file for_in.html ya kedannnn
+
+    /*FOR..OF. dia menggunakan value untuk menampilkannya */
+    //lanjut ke file for_of.html ya kedannnn
 
 
 /*  

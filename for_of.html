@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of Js</title>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <script>
+        const app = document.getElementById('app');
+        const buah = ['semangka', 'mangga', 'apel', 'nanas', 'durian'];
+        const json = {
+            buah : [
+                {
+                    no : 1,
+                    buah : 'mangga',
+                },
+                {
+                    no : 2,
+                    buah : 'nanas',
+                },
+                {
+                    no : 3,
+                    buah : 'apel',
+                },
+                {
+                    no : 4,
+                    buah : 'pisang',
+                },
+            ]
+        };
+
+        let html = ' ';
+        let no = 1;
+
+    /* ini dengan variabel const buah*/
+        // for (const i of buah) {
+        //     html += `<p>${no ++}. ${i}</p>`
+        // };
+
+    /*ini dengan variabel const json (dengan object)*/
+        // for (const u of json.buah) {
+        //     html += `<p>${u.no}. ${u.buah}</p>`; // untuk menampilkan value no dan value buah
+        // };
+        app.innerHTML = html;
+
+    /*ini dengan value ngambil dari jsonpalacehorder */
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(json => {
+                console.log(json);
+                let no = 1;
+                for (const key of json) {
+                    // html += `<p>${no++}. ${key.username}</p>`; //untuk menampilkan value username
+                    // html += `<p>${no++}. ${key.name}</p>`; //untuk menampilkan value name
+                    // html += `<p>${no++}. ${key.email}</p>`; //untuk menampilkan value email
+                /*bermain dengan value didalam value, cara sama kok tenang aja bessss*/
+                    //html += `<p>${no++}. ${key.address.city}</p>`; //untuk menampilkan value address yang didalamnya terdapat value city // 
+                    // html += `<p>${no++}. ${key.company.name}</p>`; //untuk menampilkan value company yang didalamnya terdapat value name // 
+                };
+                app.innerHTML = html;
+            })
+        
+
+    </script>
+</body>
+</html>

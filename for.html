@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for js</title>
+    <style>
+        .paragraf{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1rem;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+    const bill = 5;
+    // for (let i = 0; i < bill; i++) {
+    //     console.log(i);
+    // };
+    // for (let i = 0; i <= bill; i++) {
+    //     console.log(i);
+    // };//cari apa bedanya
+
+    const buah = ['semangka', 'apel', 'nanas', 'durian', 'mangga'];
+    const app = document.getElementById('app');
+    let html = ' ';
+
+    for (let i = 0; i < buah.length; i++) {
+        html += `<p class="paragraf">${buah[i]}</p>`
+    };
+    app.innerHTML = html;
+    </script>
+    
+</body>
+</html>
