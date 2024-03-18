@@ -21,7 +21,7 @@
 //     let namaKu = 'yassir';
 //     console.log(namaKu);
 // };
-// // console.log(namaKu);
+// console.log(namaKu);
 
 /* VARIABEL const. const memiliki block scope dan const tidak bisa memiliki nama variabel yang sama.*/
 // const namaKu = 'muhammad';
