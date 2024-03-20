@@ -26,9 +26,26 @@
     console.log(getQueryAll[0]);
 
 
-/* */
-/* */
-/* */
-/* */
-/* */
+/*Belajar Menjalankan Method Text, Html, Value */
+    const tag = document.querySelector('#app');
+    /*Method innerText */
+    console.log(tag.innerText);
+
+    tag.innerText ='ini menjadi innetText';
+
+    /*Method innerHTML */
+    console.log(tag.innerHTML);
+
+    tag.innerHTML = `<div>
+                    <p>Ini menjadi paragraf 1</p>
+                    <p>Ini menjadi paragraf 2</p>
+                    </div>`;
+
+    /*Method textContent */
+    console.log(tag.textContent);
+
+    tag.textContent ='ini menjadi textContent';
+
+
+    /* */
     
