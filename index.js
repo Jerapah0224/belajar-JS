@@ -263,6 +263,7 @@
 // }//arti dari b=4 itu adalah jika nilai b tidak dimasukkan maka, 4 lah sebagai nilainya(defaultnya)
 // jumlahAD(2);
 
+//      ekspresion function
 // let kurang = function (a,b) {
 //     console.log(a-b);
 //     return;
@@ -274,6 +275,13 @@
 //     console.log(a*b);
 //     return;
 // }
+
+//arrow function
+// let perpangkatan = (n) => {
+//     return n * n;
+// }
+// console.log(perpangkatan(2));
+
 
 
 /*LOOPING*/
